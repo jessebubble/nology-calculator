@@ -36,6 +36,7 @@
 .hero  {
     background-color : #232323;
     padding: 20px;
+    height: 100vh;
 }
 .hero-title {
     color: #c3c3c3;
@@ -100,8 +101,8 @@
     color: #232323;
 }
 img {
-    width: 100%;
-    height: 100%;
+    width: 70px;
+    height: 70px;
     object-fit: contain;
 }
 img:hover {
@@ -118,8 +119,8 @@ img:hover {
 #row-one > #divide {
     background-color: #ff8844;
     color: white;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 16px;
+    padding-left: 16px;
 }
 #row-one > #divide:hover {
     background-color: #44ffff;
@@ -132,4 +133,26 @@ img:hover {
 #column:hover {
     background-color: #44ffff;
     color: #232323;
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+    .hero-title {
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
 }
