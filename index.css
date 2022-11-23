@@ -48,52 +48,88 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 20px;
-    width: 100%;   
-    padding: 20px;
+    gap: 10px;
+    padding: 10px;
 }
 .hero-calculator {
-    background-color: #c3c3c3;
+    background-color: #232323;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     border-radius: 10px;
+    border: 1px solid #fff;
+    box-shadow: 0 3px 16px #ffffff33;
 }
 .calculator-display {
     background-color: #232323;
-    color: #c3c3c3;
+    border: solid 1px #fff;    
+    color: #fff;
     font-size: 24px;
     font-weight: medium;
     text-align: right;
     padding: 10px;
     width: 100%;
-    height: 96px;
+    height: 80px;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    margin-bottom: 16px;
 }
 .calculator-buttons {
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 10px;
 }
 .calculator-buttons > button {
     background-color: #232323;
+    border: solid 1px #fff;
+    border-radius: 10px;
     color: #c3c3c3;
     font-size: 24px;
     font-weight: medium;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     width: 100%;
-    border-radius: 10px;
-    border: none;
     margin: 5px;
 }
 .calculator-buttons > button:hover {
+    background-color: #44ffff;
+    color: #232323;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+img:hover {
+    transform: scale(1.1);
+}
+#row-one > button {
+    background-color: #dddddd;
+    color: black;
+}
+#row-one > button:hover {
+    background-color: #44ffff;
+    color: #232323;
+}
+#row-one > #divide {
+    background-color: #ff8844;
+    color: white;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+#row-one > #divide:hover {
+    background-color: #44ffff;
+    color: #232323;
+}
+#column {
+    background-color: #ff8844;
+    color: white; 
+}
+#column:hover {
     background-color: #44ffff;
     color: #232323;
 }
