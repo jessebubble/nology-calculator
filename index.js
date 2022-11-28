@@ -1,14 +1,9 @@
 const display = document.querySelector(".calculator-display");
 const buttons = Array.from(document.querySelectorAll(".calculator-buttons"));
-const percent = document.querySelector("#percent");
-const plusminus = document.querySelector("#plusminus");
-const divide = document.querySelector("#divide");
-const multiply = document.querySelector("#multiply");
 
 buttons.forEach((button) => {
     button.addEventListener("click", (e) => {
-    /* console.log('clicked');
-    console.log(e);
+    /* console.log(e);
     console.log(e.target);
     console.log(e.target.innerText); */
     const buttonValue = e.target.innerText;
@@ -16,9 +11,6 @@ buttons.forEach((button) => {
 
     if (buttonValue === 'AC') {
       display.innerText = '';
-    }
-    else if (buttonValue === '=') {
-        display.innerText = window.Function(`return ${displayValue}`)();
     }
     else if (buttonValue === 'x') {
         display.innerText = displayValue + '*';
@@ -31,6 +23,9 @@ buttons.forEach((button) => {
     }
     else if (buttonValue === '+/-') {
         display.innerText = displayValue + '*-1';
+    }
+    else if (buttonValue === '=') {
+        display.innerText = window.Function(`return ${displayValue}`)();
     }
     else {
         display.innerText = displayValue + buttonValue;
