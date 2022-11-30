@@ -51,6 +51,7 @@
     align-items: center;
     gap: 10px;
     padding: 10px;
+    margin-bottom: 50px;
 }
 .hero-calculator {
     background-color: #232323;
@@ -142,8 +143,28 @@ img:hover {
     background-color: #44ffff;
     color: #232323;
 }
+.music-container {
+    background-color: #232323;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    box-shadow: 0 3px 16px #ffffff33;
 
-/* media queries */
+}
+.music {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+iframe {
+    box-shadow: 0 3px 16px #ffffff33;
+    border-radius: 10px;
+}
+iframe :hover {
+    transform: scale(1.1);
+}
+
+/* media queries iphone */
 @media screen and (max-width: 768px) {
     .navbar {
         display: flex;
@@ -162,5 +183,30 @@ img:hover {
         width: 100%;
         height: 100%;
         object-fit: contain;
+    }
+    .music-container {
+        display: none;
+    }
+}
+/* media queries ipad */
+@media screen and (max-width: 1024px) {
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .music-container {
+        display: none;
+    }
+}
+/* media queries imac */
+@media screen and (max-width: 1440px) {
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .music-container {
+        display: none;
     }
 }

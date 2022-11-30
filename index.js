@@ -53,10 +53,9 @@ herotitle.addEventListener("click", () => {
     herotitle.style.fontSize = '36px';
     herotitle.style.fontWeight = 'bold';
     herotitle.style.transition = 'all 1s ease-in-out';
-    herotitle.style.scale = '1';
 });
 
-const heroicon = document.querySelectorAll(".hero-icon");
+const heroicon = document.querySelectorAll(".hero-icon-right");
 const herocalculator = document.querySelector(".hero-calculator");
 const images = ["./assets/bg1.jpg", "./assets/bg2.jpg", "./assets/bg3.jpg", "./assets/bg4.jpg", "./assets/bg5.jpg"];
 
@@ -65,4 +64,13 @@ heroicon.forEach((icon) => {
         herocalculator.style.backgroundImage = `url(${images[Math.floor(Math.random() * images.length)]})`;
         herocalculator.style.transition = 'all 1s ease-in-out';
     });
+});
+
+const lefticon = document.querySelector(".hero-icon-left");
+const musicplayer = document.querySelector(".music-container");
+const hero = document.querySelector(".hero-container");
+
+lefticon.addEventListener("click", () => {
+    musicplayer.style.display = 'block';
+    hero.style.display = 'none';
 });
